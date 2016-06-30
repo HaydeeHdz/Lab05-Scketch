@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE376DE41D258A4A00B4F957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE31D258A4A00B4F957 /* main.m */; };
 		AE376DE71D258A4B00B4F957 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE61D258A4B00B4F957 /* AppDelegate.m */; };
-		AE376DEA1D258A4B00B4F957 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE91D258A4B00B4F957 /* ViewController.m */; };
+		AE376DEA1D258A4B00B4F957 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE91D258A4B00B4F957 /* Home.m */; };
 		AE376DED1D258A4B00B4F957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE376DEB1D258A4B00B4F957 /* Main.storyboard */; };
 		AE376DF01D258A4B00B4F957 /* Lab05___Sketch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE376DEE1D258A4B00B4F957 /* Lab05___Sketch.xcdatamodeld */; };
 		AE376DF21D258A4B00B4F957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE376DF11D258A4B00B4F957 /* Assets.xcassets */; };
@@ -19,10 +19,10 @@
 /* Begin PBXFileReference section */
 		AE376DDF1D258A4A00B4F957 /* Lab05 - Sketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab05 - Sketch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE376DE31D258A4A00B4F957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE376DE51D258A4A00B4F957 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AE376DE61D258A4B00B4F957 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE376DE81D258A4B00B4F957 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE376DE91D258A4B00B4F957 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE376DE51D258A4A00B4F957 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Lab05 - Sketch/AppDelegate.h"; sourceTree = "<group>"; };
+		AE376DE61D258A4B00B4F957 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Lab05 - Sketch/AppDelegate.m"; sourceTree = "<group>"; };
+		AE376DE81D258A4B00B4F957 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Home.h; path = "Lab05 - Sketch/Home.h"; sourceTree = "<group>"; };
+		AE376DE91D258A4B00B4F957 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Home.m; path = "Lab05 - Sketch/Home.m"; sourceTree = "<group>"; };
 		AE376DEC1D258A4B00B4F957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE376DEF1D258A4B00B4F957 /* Lab05___Sketch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Lab05___Sketch.xcdatamodel"; sourceTree = "<group>"; };
 		AE376DF11D258A4B00B4F957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		AE376DE11D258A4A00B4F957 /* Lab05 - Sketch */ = {
 			isa = PBXGroup;
 			children = (
-				AE376DE51D258A4A00B4F957 /* AppDelegate.h */,
-				AE376DE61D258A4B00B4F957 /* AppDelegate.m */,
-				AE376DE81D258A4B00B4F957 /* ViewController.h */,
-				AE376DE91D258A4B00B4F957 /* ViewController.m */,
+				AE376DFC1D258A5700B4F957 /* Main */,
+				AE376DFD1D258A6500B4F957 /* Controllers */,
 				AE376DEB1D258A4B00B4F957 /* Main.storyboard */,
 				AE376DF11D258A4B00B4F957 /* Assets.xcassets */,
 				AE376DF31D258A4B00B4F957 /* LaunchScreen.storyboard */,
@@ -80,6 +78,26 @@
 				AE376DE31D258A4A00B4F957 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE376DFC1D258A5700B4F957 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AE376DE51D258A4A00B4F957 /* AppDelegate.h */,
+				AE376DE61D258A4B00B4F957 /* AppDelegate.m */,
+			);
+			name = Main;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AE376DFD1D258A6500B4F957 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE376DE81D258A4B00B4F957 /* Home.h */,
+				AE376DE91D258A4B00B4F957 /* Home.m */,
+			);
+			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE376DEA1D258A4B00B4F957 /* ViewController.m in Sources */,
+				AE376DEA1D258A4B00B4F957 /* Home.m in Sources */,
 				AE376DE71D258A4B00B4F957 /* AppDelegate.m in Sources */,
 				AE376DF01D258A4B00B4F957 /* Lab05___Sketch.xcdatamodeld in Sources */,
 				AE376DE41D258A4A00B4F957 /* main.m in Sources */,
