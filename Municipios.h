@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Municipios.h
 //  Lab05 - Sketch
 //
 //  Created by Haydee on 6/30/16.
@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CellHome.h"
-#import "Municipios.h"
+#import "MunicipiosCell.h"
+#import "MunicipiosDetails.h"
 
-@interface Home : UIViewController
+@interface Municipios : UIViewController
+@property int estado;
+
 
 
 @end
-
