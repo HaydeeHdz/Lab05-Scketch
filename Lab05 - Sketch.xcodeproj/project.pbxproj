@@ -43,6 +43,7 @@
 		AE359F061D26EBC300D2BA20 /* isla_mujeres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE359F011D26EBC300D2BA20 /* isla_mujeres.jpg */; };
 		AE359F071D26EBC300D2BA20 /* jose_maria_morelos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE359F021D26EBC300D2BA20 /* jose_maria_morelos.jpg */; };
 		AE359F081D26EBC300D2BA20 /* lazaro_cardenas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE359F031D26EBC300D2BA20 /* lazaro_cardenas.jpg */; };
+		AE359F351D2C450F00D2BA20 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AE359F341D2C450F00D2BA20 /* Podfile */; };
 		AE376DE41D258A4A00B4F957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE31D258A4A00B4F957 /* main.m */; };
 		AE376DE71D258A4B00B4F957 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE61D258A4B00B4F957 /* AppDelegate.m */; };
 		AE376DEA1D258A4B00B4F957 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AE376DE91D258A4B00B4F957 /* Home.m */; };
@@ -50,9 +51,12 @@
 		AE376DF01D258A4B00B4F957 /* Lab05___Sketch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE376DEE1D258A4B00B4F957 /* Lab05___Sketch.xcdatamodeld */; };
 		AE376DF21D258A4B00B4F957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE376DF11D258A4B00B4F957 /* Assets.xcassets */; };
 		AE376DF51D258A4B00B4F957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE376DF31D258A4B00B4F957 /* LaunchScreen.storyboard */; };
+		AE66F96F1D2D615C00EAFCDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE66F96E1D2D615C00EAFCDE /* GoogleService-Info.plist */; };
+		EED7EE09A9FC6D80EE9DDD0E /* Pods_Lab05___Sketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7076F7F45FA6934F0FC3EB /* Pods_Lab05___Sketch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0FA583A27A4BA1893202F26 /* Pods-Lab05 - Sketch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab05 - Sketch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lab05 - Sketch/Pods-Lab05 - Sketch.release.xcconfig"; sourceTree = "<group>"; };
 		AE359EB81D25F72200D2BA20 /* CellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHome.h; sourceTree = "<group>"; };
 		AE359EB91D25F72200D2BA20 /* CellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHome.m; sourceTree = "<group>"; };
 		AE359EBA1D25F72200D2BA20 /* CellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellHome.xib; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 		AE359F011D26EBC300D2BA20 /* isla_mujeres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = isla_mujeres.jpg; sourceTree = "<group>"; };
 		AE359F021D26EBC300D2BA20 /* jose_maria_morelos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jose_maria_morelos.jpg; sourceTree = "<group>"; };
 		AE359F031D26EBC300D2BA20 /* lazaro_cardenas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lazaro_cardenas.jpg; sourceTree = "<group>"; };
+		AE359F341D2C450F00D2BA20 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE376DDF1D258A4A00B4F957 /* Lab05 - Sketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab05 - Sketch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE376DE31D258A4A00B4F957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE376DE51D258A4A00B4F957 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Lab05 - Sketch/AppDelegate.h"; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 		AE376DF11D258A4B00B4F957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE376DF41D258A4B00B4F957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE376DF61D258A4B00B4F957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE66F96E1D2D615C00EAFCDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA7076F7F45FA6934F0FC3EB /* Pods_Lab05___Sketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Lab05___Sketch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4F55506BE51ADA1A29D69D /* Pods-Lab05 - Sketch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab05 - Sketch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lab05 - Sketch/Pods-Lab05 - Sketch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +119,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED7EE09A9FC6D80EE9DDD0E /* Pods_Lab05___Sketch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055C8E7F2B6F462821731E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB4F55506BE51ADA1A29D69D /* Pods-Lab05 - Sketch.debug.xcconfig */,
+				A0FA583A27A4BA1893202F26 /* Pods-Lab05 - Sketch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE359EB71D25F6D600D2BA20 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,8 +188,11 @@
 		AE376DD61D258A4A00B4F957 = {
 			isa = PBXGroup;
 			children = (
+				AE359F341D2C450F00D2BA20 /* Podfile */,
 				AE376DE11D258A4A00B4F957 /* Lab05 - Sketch */,
 				AE376DE01D258A4A00B4F957 /* Products */,
+				055C8E7F2B6F462821731E65 /* Pods */,
+				DA64290FDCCE78D3BA3BEA40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,10 +207,11 @@
 		AE376DE11D258A4A00B4F957 /* Lab05 - Sketch */ = {
 			isa = PBXGroup;
 			children = (
-				AE359EBD1D261B8300D2BA20 /* imgs */,
-				AE359EB71D25F6D600D2BA20 /* Cells */,
+				AE66F96E1D2D615C00EAFCDE /* GoogleService-Info.plist */,
 				AE376DFC1D258A5700B4F957 /* Main */,
 				AE376DFD1D258A6500B4F957 /* Controllers */,
+				AE359EBD1D261B8300D2BA20 /* imgs */,
+				AE359EB71D25F6D600D2BA20 /* Cells */,
 				AE376DEB1D258A4B00B4F957 /* Main.storyboard */,
 				AE376DF11D258A4B00B4F957 /* Assets.xcassets */,
 				AE376DF31D258A4B00B4F957 /* LaunchScreen.storyboard */,
@@ -232,6 +254,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		DA64290FDCCE78D3BA3BEA40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7076F7F45FA6934F0FC3EB /* Pods_Lab05___Sketch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE376DF91D258A4B00B4F957 /* Build configuration list for PBXNativeTarget "Lab05 - Sketch" */;
 			buildPhases = (
+				C1368C08014A40CE85CE820B /* [CP] Check Pods Manifest.lock */,
 				AE376DDB1D258A4A00B4F957 /* Sources */,
 				AE376DDC1D258A4A00B4F957 /* Frameworks */,
 				AE376DDD1D258A4A00B4F957 /* Resources */,
+				03DDCCD509C117129DB6D152 /* [CP] Embed Pods Frameworks */,
+				9529275E2FAA2FDF60555266 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +328,8 @@
 				AE359ECE1D261B8300D2BA20 /* calvillo.jpg in Resources */,
 				AE359EF11D26578700D2BA20 /* san_juan_de_los_lagos.jpg in Resources */,
 				AE376DF51D258A4B00B4F957 /* LaunchScreen.storyboard in Resources */,
+				AE66F96F1D2D615C00EAFCDE /* GoogleService-Info.plist in Resources */,
+				AE359F351D2C450F00D2BA20 /* Podfile in Resources */,
 				AE359ED81D261B8300D2BA20 /* san_francisco_de_los_romo.jpg in Resources */,
 				AE376DF21D258A4B00B4F957 /* Assets.xcassets in Resources */,
 				AE359EFC1D26E93A00D2BA20 /* el_marques.jpg in Resources */,
@@ -328,6 +363,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03DDCCD509C117129DB6D152 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lab05 - Sketch/Pods-Lab05 - Sketch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9529275E2FAA2FDF60555266 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lab05 - Sketch/Pods-Lab05 - Sketch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1368C08014A40CE85CE820B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE376DDB1D258A4A00B4F957 /* Sources */ = {
@@ -449,6 +532,7 @@
 		};
 		AE376DFA1D258A4B00B4F957 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4F55506BE51ADA1A29D69D /* Pods-Lab05 - Sketch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab05 - Sketch/Info.plist";
@@ -460,6 +544,7 @@
 		};
 		AE376DFB1D258A4B00B4F957 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FA583A27A4BA1893202F26 /* Pods-Lab05 - Sketch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab05 - Sketch/Info.plist";

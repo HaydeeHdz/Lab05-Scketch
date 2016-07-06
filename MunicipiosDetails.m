@@ -7,6 +7,7 @@
 //
 
 #import "MunicipiosDetails.h"
+@import GoogleMaps;
 
 @interface MunicipiosDetails ()
 @property NSMutableArray *municipioDetail;
@@ -16,17 +17,209 @@
 @end
 
 @implementation MunicipiosDetails
+{
+    GMSMapView *mapView_;
+    GMSCameraPosition *camera;
+    long latitud;
+    long longitud;
+    NSString *tittle;
+    GMSMarker *marker;
+}
 /**********************************************************************************************/
 #pragma mark - Initialization methods
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initController];
+    //[self initController];
+    [self createMap];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//-------------------------------------------------------------------------------
+- (void)createMap {
+    // Creates a marker in the center of the map.
+    marker = [[GMSMarker alloc] init];
+    
+    // Create a GMSCameraPosition that tells the map to display the
+    latitud = 0;
+    longitud = 0;
+    if (self.estado == 0)
+    {
+        if (self.municipio == 0)
+        {
+            latitud = 21.846954;
+            longitud = -102.716095;
+            tittle = @"Calvillo";
+        }
+        else if (self.municipio == 1)
+        {
+            latitud = 22.365802;
+            longitud = -102.299222;
+            tittle = @"Cosio";
+        }
+        else if (self.municipio == 2)
+        {
+            latitud = 21.961825;
+            longitud = -102.344206;
+            tittle = @"Jesus Maria";
+        }
+        else if (self.municipio == 3)
+        {
+            latitud = 22.142999;
+            longitud = -102.274159;
+            tittle = @"Pabellon de Arteaga";
+        }
+        else if (self.municipio == 4)
+        {
+            latitud = 22.073417;
+            longitud = -102.268927;
+            tittle = @"San Francisco de los Romo";
+        }
+    }
+    else if (self.estado == 1)
+    {
+        if (self.municipio == 0)
+        {
+            latitud = 21.1561;
+            longitud = -100.931;
+            tittle = @"Dolores Hidalgo";
+        }
+        else if (self.municipio == 1)
+        {
+            latitud = 22.1056;
+            longitud = -101.667;
+            tittle = @"Leon";
+        }
+        else if (self.municipio == 2)
+        {
+            latitud = 20.4333;
+            longitud = -101.733;
+            tittle = @"Penjamo";
+        }
+        else if (self.municipio == 3)
+        {
+            latitud = 20.5667;
+            longitud = -101.2;
+            tittle = @"Salamanca";
+        }
+        else if (self.municipio == 4)
+        {
+            latitud = 20.9333;
+            longitud = -101.433;
+            tittle = @"Silao";
+        }
+    }
+    else if (self.estado == 2)
+    {
+        if (self.municipio == 0)
+        {
+            latitud = 20.3;
+            longitud = -103.2;
+            tittle = @"Chapala";
+        }
+        else if (self.municipio == 1)
+        {
+            latitud = 21.25;
+            longitud = -102.3;
+            tittle = @"San Juan de los Lagos";
+        }
+        else if (self.municipio == 2)
+        {
+            latitud = 20.8;
+            longitud = -103.817;
+            tittle = @"Tequila";
+        }
+        else if (self.municipio == 3)
+        {
+            latitud = 20.6167;
+            longitud = -103.233;
+            tittle = @"Tonala";
+        }
+        else if (self.municipio == 4)
+        {
+            latitud = 21.6667;
+            longitud = -102.6;
+            tittle = @"Villa Hidalgo";
+        }
+    }
+    else if (self.estado == 3)
+    {
+        if (self.municipio == 0)
+        {
+            latitud = 20.8;
+            longitud = -100.05;
+            tittle = @"Colon";
+        }
+        else if (self.municipio == 1)
+        {
+            latitud = 20.3986;
+            longitud = -100.424;
+            tittle = @"Corregidora";
+        }
+        else if (self.municipio == 2)
+        {
+            latitud = 20.6167;
+            longitud = -100.317;
+            tittle = @"El Marques";
+        }
+        else if (self.municipio == 3)
+        {
+            latitud = 20.6;
+            longitud = -100.383;
+            tittle = @"Queretaro";
+        }
+        else if (self.municipio == 4)
+        {
+            latitud = 20.3833;
+            longitud = -100;
+            tittle = @"San Juan del Rio";
+        }
+    }
+    else if (self.estado == 4)
+    {
+        if (self.municipio == 0)
+        {
+            latitud = 20.8167;
+            longitud = -87.325;
+            tittle = @"Benito Juarez";
+        }
+        else if (self.municipio == 1)
+        {
+            latitud = 20.5083;
+            longitud = -86.9458;
+            tittle = @"Cozumel";
+        }
+        else if (self.municipio == 2)
+        {
+            latitud = 21.2;
+            longitud = -86.7167;
+            tittle = @"Isla Mujeres";
+        }
+        else if (self.municipio == 3)
+        {
+            latitud = 19.75;
+            longitud = -88.7167;
+            tittle = @"Jose Maria Morelos y Pavon";
+        }
+        else if (self.municipio == 4)
+        {
+            latitud = 18.975;
+            longitud = -88.7792;
+            tittle = @"Lazaro Cardenas";
+        }
+    }
+    camera = [GMSCameraPosition cameraWithLatitude:latitud longitude:longitud zoom:15];
+    mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView_.myLocationEnabled = YES;
+    marker.position = CLLocationCoordinate2DMake(latitud, longitud);
+    marker.title = tittle;
+    marker.snippet = @"Centro";
+    marker.map = mapView_;
+    self.view = mapView_;
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
